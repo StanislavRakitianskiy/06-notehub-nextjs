@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/work/Projects/new/react/06-notehub-nextjs/src/app/page.tsx"],"sourcesContent":["import css from \"./Home.module.css\";\r\n\r\nexport default function HomePage() {\r\n  return (\r\n    <main>\r\n      <div className={css.container}>\r\n        <h1 className={css.title}>Welcome to NoteHub</h1>\r\n        <p className={css.description}>\r\n          NoteHub is a simple and efficient application designed for managing personal notes...\r\n        </p>\r\n        <p className={css.description}>\r\n          The app provides a clean interface for writing, editing, and browsing notes...\r\n        </p>\r\n      </div>\r\n    </main>\r\n  );\r\n}"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;YAAI,WAAW,IAAI,SAAS;;8BAC3B,8OAAC;oBAAG,WAAW,IAAI,KAAK;8BAAE;;;;;;8BAC1B,8OAAC;oBAAE,WAAW,IAAI,WAAW;8BAAE;;;;;;8BAG/B,8OAAC;oBAAE,WAAW,IAAI,WAAW;8BAAE;;;;;;;;;;;;;;;;;AAMvC"}}]
+}

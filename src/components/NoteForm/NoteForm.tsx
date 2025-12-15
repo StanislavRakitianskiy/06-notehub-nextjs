@@ -3,8 +3,8 @@ import * as Yup from "yup";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 import css from "./NoteForm.module.css";
-import type { NoteTag } from "../../types/note";
-import { createNote, type CreateNotePayload } from "../../services/noteService";
+import type { NoteTag } from "@/types/note";
+import { createNote, type CreateNotePayload } from "@/lib/api";
 
 export interface NoteFormValues {
   title: string;

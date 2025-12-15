@@ -1,0 +1,42 @@
+import type { AxiosResponse } from "axios";
+import { api } from "./axios";
+import type { Note, NoteTag } from "@/types/note";
+
+export interface FetchNotesParams {
+  page?: number;
+  perPage?: number;
+  search?: string;
+  tag?: NoteTag;
+  sortBy?: "created" | "updated";
+}
+
+export interface FetchNotesResponse {
+  notes: Note[];
+  totalPages: number;
+}
+
+export interface CreateNotePayload {
+  title: string;
+  content: string;
+  tag: NoteTag;
+}
+
+export const fetchNotes = async (params: FetchNotesParams): Promise<FetchNotesResponse> => {
+  const response: AxiosResponse<FetchNotesResponse> = await api.get("/notes", { params });
+  return response.data;
+};
+
+export const fetchNoteById = async (id: string): Promise<Note> => {
+  const response: AxiosResponse<Note> = await api.get(`/notes/${id}`);
+  return response.data;
+};
+
+export const createNote = async (payload: CreateNotePayload): Promise<Note> => {
+  const response: AxiosResponse<Note> = await api.post("/notes", payload);
+  return response.data;
+};
+
+export const deleteNote = async (id: string): Promise<Note> => {
+  const response: AxiosResponse<Note> = await api.delete(`/notes/${id}`);
+  return response.data;
+};
