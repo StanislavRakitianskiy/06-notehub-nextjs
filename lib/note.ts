@@ -1,5 +1,5 @@
 import type { AxiosResponse } from "axios";
-import { api } from "./axios";
+import { api } from "./api";
 import type { Note, NoteTag } from "@/types/note";
 
 export interface FetchNotesParams {

@@ -1,2 +1,1 @@
-export { api } from "./axios";
-export * from "./note";  
+export * from "./note";
