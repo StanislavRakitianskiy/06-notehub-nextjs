@@ -2,8 +2,7 @@
 "[project]/lib/index.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// export { api } from "./axios";
-// export * from "./note";  
+// export * from "./note";
 __turbopack_context__.s([]);
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
